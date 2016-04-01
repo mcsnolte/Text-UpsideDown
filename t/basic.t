@@ -9,6 +9,7 @@ is upside_down('┬─┬'), '┴─┴', 'Table';
 is upside_down('┴─┴'), '┬─┬', 'Undo Table';
 is upside_down('┻━┻'), '┳━┳', 'Heavy Table';
 is upside_down('Finkel!'), '¡ʃǝʞuıℲ', 'Finkel!';
+is upside_down('marcel gruenauer'), 'ɹǝnɐuǝnɹƃ ʃǝɔɹɐɯ', 'Author';
 
 done-testing;
 
