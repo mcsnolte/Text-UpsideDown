@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mcsnolte/Text-UpsideDown.svg?branch=master)](https://travis-ci.org/mcsnolte/Text-UpsideDown)
+
 NAME
 ====
 
