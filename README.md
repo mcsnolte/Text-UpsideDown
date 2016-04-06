@@ -10,7 +10,7 @@ SYNOPSIS
 
     use Text::UpsideDown;
     say upside_down("foo");
-    # prints "ɟoo"
+    # prints "ooɟ"
 
 DESCRIPTION
 ===========
