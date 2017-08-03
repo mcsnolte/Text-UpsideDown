@@ -4,6 +4,7 @@
     "version"     : "1.0.0",
     "description" : "Flip text upside-down using Unicode. Perl 5 -> 6 port.",
     "authors"     : [ "Marcel Grünauer", "Mike Doherty", "Steve Nolte (mcsnolte)" ],
+    "tags"        : [ "Text" ],
     "provides"    : {
         "Text::UpsideDown" : "lib/Text/UpsideDown.pm6"
     },
