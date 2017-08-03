@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mcsnolte/Text-UpsideDown.svg?branch=master)](https://travis-ci.org/mcsnolte/Text-UpsideDown)
+[![Build Status](https://travis-ci.org/mcsnolte/Text-UpsideDown.svg?branch=master)](https://travis-ci.org/mcsnolte/Text-UpsideDown) [![Build status](https://ci.appveyor.com/api/projects/status/3wku27w96mrhdujx?svg=true)](https://ci.appveyor.com/project/mcsnolte/text-upsidedown)
 
 NAME
 ====
