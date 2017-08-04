@@ -61,12 +61,6 @@ install:
 
 build: off
 
-after_build:
-# upload test results via rest-api
-  - ps: |
-        $wc = New-Object 'System.Net.WebClient'
-        $wc.UploadFile("https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\junit.xml))
-
 on_failure:
   - ps: $root = Resolve-Path "~\.cpanm\work"; [IO.Directory]::GetFiles($root.Path, '*.log', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName to-publish }
 
@@ -75,6 +69,12 @@ on_failure:
 # I'd like to run Devel::Cover and submit to Coveralls too.
 test_script:
   - prove --formatter TAP::Formatter::JUnit -v -e "perl6 -Ilib" t/ > .\junit.xml
+
+after_test:
+# upload test results via rest-api
+  - ps: |
+        $wc = New-Object 'System.Net.WebClient'
+        $wc.UploadFile("https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\junit.xml))
 
 shallow_clone: true
 
