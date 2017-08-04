@@ -50,6 +50,7 @@ install:
   - SET PATH=C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;%PATH%
   - ps: refreshenv
   - perl -v
+  - cpanm Devel::Cover
   - cpanm TAP::Formatter::JUnit
   # Install Rakudo Star with chocolately.
   # https://chocolatey.org/packages/rakudostar
