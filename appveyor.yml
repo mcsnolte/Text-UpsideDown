@@ -50,6 +50,7 @@ install:
   - SET PATH=C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;%PATH%
   - ps: refreshenv
   - perl -v
+  - cpanm TAP::Formatter::JUnit
   # Install Rakudo Star with chocolately.
   # https://chocolatey.org/packages/rakudostar
   - if not exist "C:\Rakudo" cinst rakudostar
@@ -63,7 +64,7 @@ build: off
 #
 # I'd like to run Devel::Cover and submit to Coveralls too.
 test_script:
-  - prove -v -e "perl6 -Ilib" t/
+  - prove --formatter TAP::Formatter::JUnit -v -e "perl6 -Ilib" t/
 
 shallow_clone: true
 
