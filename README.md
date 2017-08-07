@@ -20,6 +20,6 @@ This module will flip text upside-down using Unicode.
 AUTHOR
 ======
 
-This software is copyright (c) 2007 by Marcel Grünauer and Mike Doherty. perl6 port: 2016 Steve Nolte
+This software is copyright (c) 2007 by Marcel Grünauer and Mike Doherty. Steve (mcsnolte) Nolte ported it to Perl 6 in 2016.
 
 This is free software; you can redistribute it and/or modify it under the same terms as the Perl 5 programming language system itself.
