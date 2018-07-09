@@ -17,6 +17,12 @@ DESCRIPTION
 
 This module will flip text upside-down using Unicode.
 
+SEE ALSO
+========
+
+* All available [Perl 6 Text modules](https://modules.perl6.org/t/TEXT)
+* Original [Perl 5 version](https://metacpan.org/pod/Text::UpsideDown)
+
 AUTHOR
 ======
 
